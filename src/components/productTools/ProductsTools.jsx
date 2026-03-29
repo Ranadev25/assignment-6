@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const ProductsTools = () => {
   const [btnToggle, setBtnToggle] = useState(false);
   return (
-    <div className="container mx-auto my-10">
+    <div className="md:w-[90%] lg:w-[85%] mx-auto my-10">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-medium">
           Premium Digital Tools

@@ -4,7 +4,7 @@ import PlayIcon from "../../assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="container mx-auto ">
+    <div className="md:w-[90%] lg:w-[85%] mx-auto ">
       <div className="px-0 max-sm:px-3">
         <div className=" md:flex justify-center items-center gap-5 lg:gap-10">
           <div className="md:w-[56%]">

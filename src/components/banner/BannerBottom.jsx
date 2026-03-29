@@ -3,7 +3,7 @@ import React from "react";
 const BannerBottom = () => {
   return (
     <div className="bg-linear-to-r from-[#4F39F6] to-[#8839f6]">
-      <div className="container py-5 mx-auto">
+      <div className="md:w-[90%] lg:w-[85%] py-5 mx-auto">
         <div className="grid sm:grid-cols-3 justify-around ">
           <div className="text-center text-white my-5">
             <h1 className="text-4xl font-medium">50k+</h1>
