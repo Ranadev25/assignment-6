@@ -16,7 +16,7 @@ const pricingPlans = [
       "1 project per month"
     ],
     buttonText: "Get Started Free",
-    buttonStyle: "bg-gradient-to-r from-purple-500 to-violet-600 text-white",
+    buttonStyle: "bg-gradient-to-r from-[#4F39F6] to-[#8839f6] text-white",
     isPopular: false,
     highlight: false
   },
@@ -54,11 +54,12 @@ const pricingPlans = [
       "Custom branding"
     ],
     buttonText: "Contact Sales",
-    buttonStyle: "bg-gradient-to-r from-purple-500 to-violet-600 text-white",
+    buttonStyle: "bg-gradient-to-r from-[#4F39F6] to-[#8839f6] text-white",
     isPopular: false,
     highlight: false
   }
 ];
+
 
 const Pricing = () => {
   return (
