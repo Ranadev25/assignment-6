@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import Card from "./Card";
+import AddCard from "./AddCard";
 
-const ProductsTools = () => {
-  const [btnToggle, setBtnToggle] = useState(false);
+const ProductsTools = ({
+  products,
+  setCount,
+  count,
+  setNewProducts,
+  newProducts,
+}) => {
+  const [btnToggle, setBtnToggle] = useState(true);
+  const [activeButtonId, setActiveButtonId] = useState(null);
   return (
     <div className="md:w-[90%] lg:w-[85%] mx-auto my-10">
       <div className="text-center">
@@ -15,24 +24,37 @@ const ProductsTools = () => {
         <div className="text-center">
           <div className="inline-block border-2 border-gray-300 rounded-full py-0.5 px-1">
             <button
-              className={`${btnToggle ? "bg-white text-black" : "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6]"} rounded-full px-4 py-1.5`}
-              onClick={() => setBtnToggle(false)}
+              className={`${btnToggle ? "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6]" : " bg-white text-black"} rounded-full px-4 py-1.5`}
+              onClick={() => setBtnToggle(true)}
             >
               Products
             </button>
             <button
-              className={`${btnToggle ? "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] " : "bg-white text-black"} rounded-full px-4 py-1.5`}
-              onClick={() => setBtnToggle(true)}
+              className={`${btnToggle ? "bg-white text-black" : "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] "} rounded-full px-4 py-1.5`}
+              onClick={() => setBtnToggle(false)}
             >
               <span>Cart</span>
-              <span>(0)</span>
+              <span>({count})</span>
             </button>
           </div>
         </div>
       </div>
-      <div>
-
-      </div>
+      {btnToggle ? (
+        <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+          {products.map((product) => (
+            <Card
+              key={product.id}
+              product={product}
+              setCount={setCount}
+              activeButtonId={activeButtonId}
+              setActiveButtonId={setActiveButtonId}
+              setNewProducts={setNewProducts}
+            />
+          ))}
+        </div>
+      ) : (
+        <AddCard newProducts={newProducts} setNewProducts={setNewProducts} setCount={setCount} />
+      )}
     </div>
   );
 };

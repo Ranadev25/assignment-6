@@ -10,7 +10,7 @@ const Banner = () => {
           <div className="md:w-[56%]">
             <div className="bg-blue-50 inline-block px-4 py-1 rounded-full mt-10 text-blue-500 ">
               <div className="flex accent-emerald-50 justify-center">
-                <input type="radio" checked={true} className="accent-[#4F39F6] mr-1" />
+                <input type="radio" className="accent-[#4F39F6] mr-1" />
                 <span>New: AI-Powered Tools Available</span>
               </div>
             </div>

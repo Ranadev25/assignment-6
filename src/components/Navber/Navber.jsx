@@ -1,7 +1,7 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navber = () => {
+const Navber = ({count}) => {
   return (
     <div className="shadow-sm">
       <div className="md:w-[90%] lg:w-[85%] mx-auto ">
@@ -79,8 +79,8 @@ const Navber = () => {
               <li>
                 <a href="" className="text-2xl font-medium relative">
                   <CiShoppingCart />
-                  <p className="absolute top-1 right-2 text-sm bg-orange-500 rounded-full leading-3 p-px ">
-                    0
+                  <p className={`absolute top-1 right-2 text-sm bg-orange-500 text-white rounded-full leading-3 ${count && "p-0.5"}`}>
+                    {count ? count : "" }
                   </p>
                 </a>
               </li>
