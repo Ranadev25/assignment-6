@@ -12,7 +12,7 @@ const ProductsTools = ({
   const [btnToggle, setBtnToggle] = useState(true);
   const [activeButtonId, setActiveButtonId] = useState(null);
   return (
-    <div className="md:w-[90%] lg:w-[85%] mx-auto my-10">
+    <div className="md:w-[90%] lg:w-[85%] mx-auto my-10 mb-20">
       <div className="text-center">
         <h1 className="text-3xl md:text-4xl font-medium">
           Premium Digital Tools
@@ -40,7 +40,7 @@ const ProductsTools = ({
         </div>
       </div>
       {btnToggle ? (
-        <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5">
+        <div className="mt-7 grid sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 bg-gray-50 rounded-lg p-3">
           {products.map((product) => (
             <Card
               key={product.id}

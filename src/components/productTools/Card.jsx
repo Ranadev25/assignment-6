@@ -1,4 +1,4 @@
-
+import { toast } from 'react-toastify';
 import { useState } from "react";
 import { FaCheck } from "react-icons/fa6";
 
@@ -31,10 +31,11 @@ const Card = ({ product, setCount, activeButtonId, setActiveButtonId,setNewProdu
     setCount(pre => pre + 1)
     setIsClick(true)
     setActiveButtonId(id);
-    setNewProducts(pre=>[...pre,product])
+    setNewProducts(pre => [...pre, product])
+    toast.success("Product card is added")
   }
   return (
-    <div className="border-2 border-gray-200 rounded-lg p-3 relative max-md:mx-3">
+    <div className="border-2 border-gray-200 rounded-lg p-3 relative bg-white">
       <div>
         <p className={`absolute top-1 right-3 ${getTagStyle(tagType)} px-3 py-0.5 rounded-full `} >{tagType}</p>
         <img className="border border-gray-200 p-2 mt-3 rounded-full" src={image} alt="img" />

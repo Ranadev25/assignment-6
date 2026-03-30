@@ -4,7 +4,7 @@ import PlayIcon from "../../assets/Play.png";
 
 const Banner = () => {
   return (
-    <div className="md:w-[90%] lg:w-[85%] mx-auto ">
+    <div className="md:w-[90%] lg:w-[85%] mx-auto mt-10">
       <div className="px-0 max-sm:px-3">
         <div className=" md:flex justify-center items-center gap-5 lg:gap-10">
           <div className="md:w-[56%]">
@@ -22,8 +22,8 @@ const Banner = () => {
               today. Explore Products
             </p>
             <div className="flex items-center gap-2 mt-2 lg:mt-5"> 
-              <button className="text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] rounded-full px-3 py-2">Explore Products</button>
-              <button className="flex gap-2 items-center justify-center border border-gray-300 rounded-full px-3 py-2">
+              <button className="text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] hover:scale-95 rounded-full px-3 py-2">Explore Products</button>
+              <button className="flex gap-2 items-center justify-center border border-gray-300 hover:bg-blue-50 rounded-full px-3 py-2">
                 <img src={PlayIcon} alt="Play Icon" />
                 <span>Watch Demo</span>
               </button>
