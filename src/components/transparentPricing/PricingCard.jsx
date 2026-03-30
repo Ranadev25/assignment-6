@@ -44,7 +44,7 @@ const PricingCard = ({ item }) => {
             </li>
           ))}
         </ul>
-        <button className={`${highlight ?  "bg-white text-black": buttonStyle } w-full rounded-full py-2 my-4 ${item.id==1 && "mt-20" }`}>{buttonText}</button>
+        <button className={`${highlight ?  "bg-white text-black": buttonStyle } w-full rounded-full py-2 my-4 ${item.id==1 && "mt-20" } cursor-pointer`}>{buttonText}</button>
       </div>
     </div>
   );

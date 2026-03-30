@@ -24,13 +24,13 @@ const ProductsTools = ({
         <div className="text-center">
           <div className="inline-block border-2 border-gray-300 rounded-full py-0.5 px-1">
             <button
-              className={`${btnToggle ? "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6]" : " bg-white text-black"} rounded-full px-4 py-1.5`}
+              className={`${btnToggle ? "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6]" : " bg-white text-black"} rounded-full px-4 py-1.5 cursor-pointer`}
               onClick={() => setBtnToggle(true)}
             >
               Products
             </button>
             <button
-              className={`${btnToggle ? "bg-white text-black" : "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] "} rounded-full px-4 py-1.5`}
+              className={`${btnToggle ? "bg-white text-black" : "text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] "} rounded-full px-4 py-1.5 cursor-pointer`}
               onClick={() => setBtnToggle(false)}
             >
               <span>Cart</span>

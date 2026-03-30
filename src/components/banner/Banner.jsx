@@ -22,8 +22,8 @@ const Banner = () => {
               today. Explore Products
             </p>
             <div className="flex items-center gap-2 mt-2 lg:mt-5"> 
-              <button className="text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] hover:scale-95 rounded-full px-3 py-2">Explore Products</button>
-              <button className="flex gap-2 items-center justify-center border border-gray-300 hover:bg-blue-50 rounded-full px-3 py-2">
+              <button className="text-white bg-linear-to-r from-[#4F39F6] to-[#8839f6] hover:scale-95 rounded-full px-3 py-2 cursor-pointer">Explore Products</button>
+              <button className="flex gap-2 items-center justify-center border border-gray-300 hover:bg-blue-50 rounded-full px-3 py-2 cursor-pointer">
                 <img src={PlayIcon} alt="Play Icon" />
                 <span>Watch Demo</span>
               </button>

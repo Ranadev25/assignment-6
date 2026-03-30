@@ -57,7 +57,7 @@ const AddCard = ({ setNewProducts, newProducts, setCount }) => {
           <p className="text-sm text-gray-400">Total</p>
           <p className="text-lg font-medium">${totalPrice}</p>
         </div>
-        <button className="w-full bg-blue-600 text-white py-3 rounded-full mt-4 font-medium" onClick={handelCheckout}>Proceed to Checkout</button>
+        <button className="w-full bg-blue-600 text-white py-3 rounded-full mt-4 font-medium cursor-pointer" onClick={handelCheckout}>Proceed to Checkout</button>
       </div>
     </div>
   );

@@ -10,8 +10,8 @@ const Workflow = () => {
           work smarter. <br /> Start your free trial today.
         </p>
         <div className="flex items-center justify-center gap-3 my-5">
-          <button className="bg-white text-black px-4 py-2 rounded-full">Explore Products</button>
-          <button className="border border-gray-400 px-4 py-2 rounded-full">View Pricing</button>
+          <button className="bg-white text-black px-4 py-2 rounded-full cursor-pointer hover:scale-95">Explore Products</button>
+          <button className="border border-gray-400 px-4 py-2 rounded-full cursor-pointer hover:scale-95">View Pricing</button>
         </div>
         <p className="text-sm">14-day free trial • No credit card required • Cancel anytime</p>
       </div>
