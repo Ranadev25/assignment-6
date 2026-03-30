@@ -1,9 +1,9 @@
 import React from "react";
 import { CiShoppingCart } from "react-icons/ci";
 
-const Navber = ({count}) => {
+const Navber = ({ count }) => {
   return (
-    <div className="shadow-sm bg-white">
+    <div className="shadow-sm max-w-400 mx-auto fixed top-0 z-10 bg-white left-0 right-0">
       <div className="md:w-[90%] lg:w-[85%] mx-auto ">
         <div className="navbar px-0">
           <div className="navbar-start">
@@ -79,8 +79,10 @@ const Navber = ({count}) => {
               <li>
                 <a href="" className="text-2xl font-medium relative">
                   <CiShoppingCart />
-                  <p className={`absolute top-1 right-2 text-sm bg-orange-500 text-white rounded-full leading-3 ${count && "p-0.5"}`}>
-                    {count ? count : "" }
+                  <p
+                    className={`absolute top-1 right-2 text-sm bg-orange-500 text-white rounded-full leading-3 ${count && "p-0.5"}`}
+                  >
+                    {count ? count : ""}
                   </p>
                 </a>
               </li>
