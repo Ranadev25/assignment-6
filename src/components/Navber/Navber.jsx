@@ -3,7 +3,7 @@ import { CiShoppingCart } from "react-icons/ci";
 
 const Navber = ({count}) => {
   return (
-    <div className="shadow-sm fixed top-0 z-10 bg-white w-full">
+    <div className="shadow-sm bg-white">
       <div className="md:w-[90%] lg:w-[85%] mx-auto ">
         <div className="navbar px-0">
           <div className="navbar-start">
