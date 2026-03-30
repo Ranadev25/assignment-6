@@ -2,7 +2,7 @@
 
 A modern and responsive React-based web application for browsing, selecting, and purchasing premium productivity tools.
 
-![Project Preview](https://via.placeholder.com/800x400?text=ToolKart+Preview)
+![Project Preview](https://disitools.netlify.app/)
 
 ## ✨ Features
 
